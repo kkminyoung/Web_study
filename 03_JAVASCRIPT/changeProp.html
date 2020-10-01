@@ -1,0 +1,26 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script = "text/javascript">
+        var colorVal;
+        function backColor() {
+            colorValue = document.getElementById("colorVal");
+            Document.bgColor = colorVal.value;
+        }
+        function textColor() {
+            colorValue = document.getElementById("colorVal");
+            Document.fgColor = colorVal.value;
+        }
+    </script>
+
+    Enter color value:
+    <input type="text" id="colorVal" value="">
+    <p>
+        <button onclick="backColor()">Change background color</button>
+        <button onclick="textColor()">Change font color</button>
+</body>
+
+</html>

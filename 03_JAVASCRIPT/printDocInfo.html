@@ -1,0 +1,25 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script = "text/javascript">
+        function changeTitle() {
+            var docValue = document.getElementById("titleValue");
+            document.title = docValue.value;
+        }
+        function printInfo() {
+            var docInfo = "last modified date+ document.lastModified" + "\n\n" + "current  URL: "  + document.URL + "\n\n" + "document title: "+ document.title + "\n\n";
+            alert(docInfo);
+        }
+    </script>
+
+    //Enter title
+    <input type="text" id="titleValue" value="new doc">
+    <p>
+        <button onclick="changeTitle()">change title</button>
+        <button onclick="prinInfo()">print doc info</button>
+</body>
+
+</html>

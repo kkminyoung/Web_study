@@ -1,0 +1,27 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script = "text/javascript" >
+        var newWin;
+        function newOpen() {
+            newWin = window.open('test.html', ' ', 'width = 600, height = 300');
+        }
+        function windowMove() {
+            var xdist = document.getElementById("setX");
+            var ydist = document.getElementById("setY");
+            newWin.moveBy(xdist.value, ydist.value);
+            newWin.focus();
+        }
+    </script>
+
+    <button onclick="newOpen()">Open a new window</button>
+    X: <input type="text" id="setX" value="0">
+    Y: <input type="text" id="setY" value="0">
+    <p>
+        <button onclick="winMove()">Move the window</button>
+</body>
+
+</html>
